@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout Page</title>
+  <link rel="stylesheet" href="Payment.css">
+</head>
+<body>
+  <div class="container">
+    <!-- FORM SECTION -->
+    <div class="form-container">
+      <h2>Shipping Information</h2>
+      <div class="two-columns">
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" placeholder="John" />
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" placeholder="Doe" />
+        </div>
+      </div>
+      <div class="two-columns">
+        <div class="form-group">
+          <label for="state">State/Province</label>
+          <input type="text" id="state" placeholder="California" />
+        </div>
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" id="city" placeholder="Los Angeles" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" id="address" placeholder="123 Main St" />
+      </div>
+      <div class="two-columns">
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" placeholder="+1 234 567 890" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="john.doe@example.com" />
+        </div>
+      </div>
+      <button class="order-button">Place Order</button>
+    </div>
+
+    <!-- PRODUCT SECTION -->
+    <div class="product-container">
+      <h2>Order Summary</h2>
+      <div class="product-item">
+        <img src="capybara.jpg" alt="Capybara Plush" />
+        <div class="product-details">
+          <p>Super soft Capybara plush</p>
+          <strong>125,900đ</strong>
+        </div>
+        <input type="number" class="quantity-input" value="1" min="1" />
+      </div>
+      <div class="product-item">
+        <img src="bunny.jpg" alt="Bunny Plush" />
+        <div class="product-details">
+          <p>Jellycat Bunny Rabbit</p>
+          <strong>48,000đ</strong>
+        </div>
+        <input type="number" class="quantity-input" value="1" min="1" />
+      </div>
+
+      <div class="summary">
+        <p>Subtotal <span>173,900đ</span></p>
+        <p>Shipping Fee <span>Free</span></p>
+        <p class="total">Total <span>173,900đ</span></p>
+      </div>
+    </div>
+  </div>
+  <script src="payment.js"></script>
+</body>
+</html>
