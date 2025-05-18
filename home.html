@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teddora - Cute Teddy Bears</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div id="header"></div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="offer-banner">
+      <h1>Limited Time Offer: Shop & Save Big Today!</h1>
+      <div class="offer-code">Use code SPECIAL to save an extra 20%</div>
+      <a href="#" class="cta-button">Shop Now 🧸</a>
+    </div>
+  </section>
+
+  <!-- Featured Collection -->
+  <section class="featured-collection">
+    <h2 class="section-title">Featured Collection</h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <h3>Snuggle Bear</h3>
+        <div class="product-price">$990.00</div>
+        <p>Extra large cuddly companion with soft velvet fur</p>
+      </div>
+      <div class="product-card">
+        <h3>Cozy Buddy</h3>
+        <div class="product-price">$893.00</div>
+        <p>Warm winter bear with scarf accessory</p>
+      </div>
+      <div class="product-card">
+        <h3>Tiny Friend</h3>
+        <div class="product-price">$330.00</div>
+        <p>Pocket-sized companion for everyday adventures</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Arrivals -->
+  <section class="new-arrivals">
+    <h2 class="section-title">New Arrivals</h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <h3>Pastel Paws</h3>
+        <div class="product-price">$99.50</div>
+        <p>Soft pastel-colored bear with embroidered details</p>
+      </div>
+      <div class="product-card">
+        <h3>Golden Hugger</h3>
+        <div class="product-price">$99.50</div>
+        <p>Shimmery golden bear with glitter accents</p>
+      </div>
+      <div class="product-card">
+        <h3>Berry Buddy</h3>
+        <div class="product-price">$99.50</div>
+        <p>Strawberry-scented bear with fruit accessories</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2 class="section-title">Love from Customers</h2>
+    <div class="products-grid">
+      <div class="testimonial-card">
+        <p class="testimonial-text">“Their products are high-quality, stylish, and comfortable.”</p>
+        <h4>Marcus Kennedy</h4>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">“Everything in their collection looks so good I almost wanted buy it all!”</p>
+        <h4>Kevin Crane</h4>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">“Comfortable but still sleek and stylish. Will order again!”</p>
+        <h4>Louis Kaufmann</h4>
+      </div>
+      <!-- New testimonials -->
+      <div class="testimonial-card">
+        <p class="testimonial-text">“Best gift for my daughter! She hasn't put it down since it arrived.”</p>
+        <h4>Sarah Johnson</h4>
+      </div>
+      <!-- <div class="testimonial-card">
+        <p class="testimonial-text">“The softest teddy I've ever owned! Worth every penny.”</p>
+        <h4>Emily Rodriguez</h4>
+      </div> -->
+    </div>
+  </section>
+
+  <div id="footer"></div>
+
+  <script>
+    // Include header and footer
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+      
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+/* Home Page Styles */
+/* ================ */
+/* Color Variables */
+:root {
+    --primary-pink: #ffc0cb;  /* Lighter pink */
+    --secondary-pink: #ffe5ec; /* Very light pink */
+    --accent-pink: #ff69b4;   /* Brighter accent */
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, var(--primary-pink), var(--accent-pink));
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .offer-banner {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  
+  .offer-banner h1 {
+    color: var(--accent-pink);
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  .offer-code {
+    background: var(--accent-pink);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 15px 0;
+    font-weight: bold;
+  }
+  
+  /* Featured Collection - Change background color here */
+  .featured-collection {
+    background: var(--secondary-pink); /* Light pink background */
+    padding: 40px 0;
+  }
+  
+  /* New Arrivals - Teddy Bear background */
+  .new-arrivals {
+    background: var(--secondary-pink) url('teddy-bear-pattern.png'); /* Add your teddy bear image */
+    background-size: contain;
+    padding: 40px 0;
+  }
+  
+  /* Testimonials - Change background color here */
+  .testimonials {
+    background: #fff; /* White background */
+    padding: 60px 0;
+    margin-top: 40px;
+  }
+  
+  /* Shared Styles */
+  .section-title {
+    text-align: center;
+    font-size: 2em;
+    color: var(--accent-pink);
+    margin: 40px 0;
+    position: relative;
+  }
+  
+  .section-title:after {
+    content: '🐻';
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .product-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-price {
+    color: var(--accent-pink);
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .testimonial-card {
+    background: var(--secondary-pink);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  
+  .testimonial-text {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .cta-button {
+    background: var(--accent-pink);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px 0;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: #ff1493;
+  }

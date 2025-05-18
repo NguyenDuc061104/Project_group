@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="signup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="pic/logo.png" alt="logo" class="logo-icon">
+    </div>
+    <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <button type="button" class="btnLogin-popup" id="loginBtn">Log In</button>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+    <div class="form-box signup">
+    <button class="google-login">
+        <img src="pic/devicon_google.png" alt="GG icon" class="gg-icon"> Continue with Google
+    </button>
+    <div class="divider">
+        <hr>
+        <span class="text">OR</span>
+        <hr>
+    </div>
+      <form id="signup-form">
+        <div class="input-box">
+          <label>Full Name</label>
+          <div class="input-container">
+            <img src="pic/material-symbols_person-outline.png" class="input-icon">
+            <input type="text" id="fullname" placeholder="John Meow">
+          </div>
+        </div>
+
+        <div class="input-box">
+          <label>Email</label>
+          <div class="input-container">
+            <img src="pic/ic_outline-email.png" class="input-icon">
+            <input type="email" id="email" placeholder="Enter your email address">
+          </div>
+        </div>
+
+        <div class="input-box">
+          <label>Password</label>
+          <div class="input-container">
+            <img src="pic/material-symbols_lock-outline.png" class="input-icon">
+            <input type="password" id="password" placeholder="Enter your password">
+            <button type="button" class="toggle-password">Show</button>
+          </div>
+          <div id="strength-bar" class="password-strength"></div>
+          <div id="strength-text" class="strength-text"></div>
+        </div>
+
+        <div class="input-box">
+          <label>Confirm Password</label>
+          <div class="input-container">
+            <img src="pic/material-symbols_lock-outline.png" class="input-icon">
+            <input type="password" id="confirm-password" placeholder="Enter your password again">
+            <button type="button" class="toggle-password">Show</button>
+          </div>
+        </div>
+
+        <div class="error-container"></div>
+
+        <div class="navigation">
+          <button type="submit" class="btnSignUp-popup">Sign Up</button>
+        </div>
+
+        <div class="haveAccount">
+          <p>Already part of the fam? <a href="login.html" class="loginHere">Log In!</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="signup.js"></script>
+</body>
+</html>
