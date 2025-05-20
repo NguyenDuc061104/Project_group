@@ -1,0 +1,19 @@
+<!-- order.html -->
+<!DOCTYPE html>
+<html>
+<head><title>Đơn hàng</title></head>
+<body>
+  <h2>Đơn hàng của bạn</h2>
+  <ul id="orders"></ul>
+  <script>
+    fetch('/api/orders')
+      .then(res => res.json())
+      .then(data => {
+        const ul = document.getElementById('orders');
+        data.forEach(order => {
+          ul.innerHTML += `<li>Đơn #${order.id} - ${order.status} - ${order.item_count} sản phẩm</li>`;
+        });
+      });
+  </script>
+</body>
+</html>

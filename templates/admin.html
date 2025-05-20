@@ -1,0 +1,20 @@
+<!-- admin.html -->
+<!DOCTYPE html>
+<html>
+<head><title>Quản lý sản phẩm</title></head>
+<body>
+  <h2>Admin - Quản lý sản phẩm</h2>
+  <button onclick="location.href='/teddies/new'">Thêm sản phẩm</button>
+  <div id="admin-products"></div>
+  <script>
+    fetch('/api/teddies')
+      .then(res => res.json())
+      .then(data => {
+        const div = document.getElementById('admin-products');
+        data.forEach(t => {
+          div.innerHTML += `<p>${t.name} - ${t.price}đ <button>Xoá</button></p>`;
+        });
+      });
+  </script>
+</body>
+</html>

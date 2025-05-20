@@ -1,0 +1,19 @@
+<!-- product_list.html -->
+<!DOCTYPE html>
+<html>
+<head><title>Danh sách sản phẩm</title></head>
+<body>
+  <h2>Gấu bông</h2>
+  <ul id="teddy-list"></ul>
+  <script>
+    fetch('/api/teddies')
+      .then(res => res.json())
+      .then(data => {
+        const ul = document.getElementById('teddy-list');
+        data.forEach(t => {
+          ul.innerHTML += `<li><a href="/products/${t.id}">${t.name}</a> - ${t.price}đ</li>`;
+        });
+      });
+  </script>
+</body>
+</html>

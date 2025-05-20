@@ -1,0 +1,21 @@
+<!-- product_detail.html -->
+<!DOCTYPE html>
+<html>
+<head><title>Chi tiết sản phẩm</title></head>
+<body>
+  <div id="product-detail"></div>
+  <script>
+    const id = location.pathname.split('/').pop();
+    fetch(`/api/teddies/${id}`)
+      .then(res => res.json())
+      .then(t => {
+        document.getElementById('product-detail').innerHTML = `
+          <h1>${t.name}</h1>
+          <p>${t.description}</p>
+          <p>Giá: ${t.price}đ</p>
+          <button>Thêm vào giỏ</button>
+        `;
+      });
+  </script>
+</body>
+</html>

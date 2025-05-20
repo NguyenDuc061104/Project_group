@@ -1,0 +1,16 @@
+<!-- cart.html -->
+<!DOCTYPE html>
+<html>
+<head><title>Giỏ hàng</title></head>
+<body>
+  <h2>Giỏ hàng</h2>
+  <div id="cart"></div>
+  <script>
+    const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+    const div = document.getElementById('cart');
+    cart.forEach(item => {
+      div.innerHTML += `<p>${item.name} - ${item.quantity} x ${item.price}đ</p>`;
+    });
+  </script>
+</body>
+</html>
